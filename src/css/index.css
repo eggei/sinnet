@@ -30,7 +30,7 @@ a:hover {
 
 .navigation {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 20px;
   left: 20px;
   font-size: 25px;
@@ -51,9 +51,8 @@ a:hover {
 .navigation li {
   display: block;
   padding: 0 10px;
-  line-height: 27px;
-  margin-bottom: 2px;
   font-weight: bold;
+  margin: -2px 0;
   -webkit-transition: all 0.2s ease-in-out;
   width: 84px;
   text-align: right;
@@ -594,7 +593,7 @@ PRESS
 
 .sinnet-logo-container {
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   top: 20px;
   width: 100%;
   display: -webkit-box;
