@@ -1,0 +1,28 @@
+.navigation {
+  position: fixed;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
+
+.navigation li {
+  color: #316972;
+  padding: 0 8px;
+  font-weight: bold;
+  font-size: 25px;
+  font-style: italic;
+  margin: 3px 0;
+  -webkit-transition: all 0.2s linear;
+  width: 84px;
+  text-align: right;
+}
+.navigation li:hover,
+.active {
+  font-size: 26px;
+  cursor: pointer;
+  color: #316972;
+}
+
+.nav-button:hover {
+  color: #123b4f;
+}

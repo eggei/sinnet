@@ -1,28 +1,29 @@
-import "./nav-button.css";
+import "../css/navigation.css";
+import { Link as LinkToSection } from "react-scroll";
 
-const navItems = ["NEWS", "SHOWS", "JAMS", "VIDEO", "PHOTO", "INFO"];
-
-export const Navigation = ({ sectionRefs }) => {
-  const scrollToSection = (sectionName) => () => {
-    sectionRefs[sectionName.toLowerCase()]?.current?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
+const navItems = ["news", "shows", "jams", "video", "photo", "info"];
+const commonProps = {
+  activeClass: "active-section-link",
+  smooth: true,
+  spy: true,
+};
+export const Navigation = ({ sections }) => {
   return (
     <ul className="navigation">
       <li>
-        <img
-          src="./logo/Sinnet-Island-Town-logo.png"
-          alt="bolt"
-          height="32vw"
-        />
+        <LinkToSection to="top-section" {...commonProps}>
+          <img
+            src="./logo/Sinnet-Island-Town-logo.png"
+            alt="bolt"
+            height="32vw"
+          />
+        </LinkToSection>
       </li>
       {navItems.map((text, index) => (
         <li key={text + "-" + index}>
-          <button className="nav-button" onClick={scrollToSection(text)}>
-            {text}
-          </button>
+          <LinkToSection to={`${text}-section`} {...commonProps}>
+            {text.toUpperCase()}
+          </LinkToSection>
         </li>
       ))}
     </ul>

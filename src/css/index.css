@@ -1,7 +1,9 @@
 @charset "utf-8";
 @import "./reset.css";
+/* Everything we write should be after reset */
 @import "./hamburger-menu.css";
 @import "./responsive.css";
+@import "./navigation.css";
 
 /* CSS Document */
 html,
@@ -28,17 +30,6 @@ a:hover {
   color: #123b4f;
 }
 
-.navigation {
-  position: fixed;
-  z-index: 2;
-  top: 20px;
-  left: 20px;
-  font-size: 25px;
-  font-weight: 900;
-  font-style: italic;
-  color: #316972;
-}
-
 .sinnet_links {
   font-size: 24px;
   padding-bottom: 8px;
@@ -46,22 +37,6 @@ a:hover {
 
 .sinnet_links i {
   padding-right: 5px;
-}
-
-.navigation li {
-  display: block;
-  padding: 0 10px;
-  font-weight: bold;
-  margin: -2px 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  width: 84px;
-  text-align: right;
-}
-.navigation li:hover,
-.active {
-  font-size: 26px;
-  cursor: pointer;
-  color: #316972;
 }
 
 .slide {
@@ -127,7 +102,7 @@ a:hover {
   background-color: #aad6f3;
 }
 
-#news .category_header {
+[name="news-section"] {
   margin-left: 58px;
 }
 
@@ -538,6 +513,9 @@ footer {
   font-weight: 800;
   letter-spacing: -1.75px;
   margin-bottom: 18px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
 }
 
 .category_header img {
@@ -611,4 +589,8 @@ PRESS
   height: 400px;
   justify-content: center;
   align-items: center;
+}
+
+.active-section-link {
+  color: white;
 }

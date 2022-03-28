@@ -1,32 +1,28 @@
-import { useEffect, useRef, useState } from "react";
 import { Navigation } from "./Navigation";
 import { HamburgerNavigation } from "./HamburgerNavigation";
 import { MainLogo } from "./MainLogo";
+import { Element as Section } from "react-scroll";
 
 export function Sinnet() {
-  const newsSectionRef = useRef(null);
-  const [sectionRefs, setSectionRefs] = useState({});
-  useEffect(() => {
-    setSectionRefs({ news: newsSectionRef });
-  }, [newsSectionRef.current]);
-
   return (
     <>
-      <Navigation sectionRefs={sectionRefs} />
+      <Navigation />
       <HamburgerNavigation /* Only for mobile */ />
 
       <MainLogo />
 
       <div className="slide paper_texture" id="slide1" data-slide="1">
-        <div>
-          <a href="https://sinnet.bandcamp.com/">
-            <img
-              className="sinnet_logo"
-              src="./photo/Island-Town-Cover-FINAL.jpg"
-              alt="island town"
-            />
-          </a>
-        </div>
+        <Section name="top-section" className="content">
+          <div>
+            <a href="https://sinnet.bandcamp.com/">
+              <img
+                className="sinnet_logo"
+                src="./photo/Island-Town-Cover-FINAL.jpg"
+                alt="island town"
+              />
+            </a>
+          </div>
+        </Section>
       </div>
 
       <div
@@ -35,9 +31,9 @@ export function Sinnet() {
         data-slide="2"
         data-stellar-background-ratio="0.2"
       >
-        <div className="content" id="news" ref={newsSectionRef}>
+        <Section name="news-section" className="content">
           <p className="category_header">
-            <img src="./logo/NEWS.png" />
+            <img src="./logo/NEWS.png" alt="news section logo" />
           </p>
           <div className="news_block">
             <h1>NEW SINNET ALBUM 'ISLAND TOWN'</h1>
@@ -138,7 +134,7 @@ export function Sinnet() {
               <br />- AJS
             </p>
           </div>
-        </div>
+        </Section>
       </div>
 
       <div className="photo_full_width">
@@ -154,7 +150,7 @@ export function Sinnet() {
         data-slide="3"
         data-stellar-background-ratio="0.2"
       >
-        <div className="content" id="shows">
+        <Section name="shows-section" className="content">
           <p className="category_header">
             <img src="./logo/SHOWS.png" />
           </p>
@@ -180,7 +176,7 @@ export function Sinnet() {
               ></a>
             </div>
           </div>
-        </div>
+        </Section>
       </div>
 
       <div
@@ -189,7 +185,7 @@ export function Sinnet() {
         data-slide="4"
         data-stellar-background-ratio="0.2"
       >
-        <div className="content" id="jams">
+        <Section name="jams-section" className="content">
           <p className="category_header">
             <img src="./logo/JAMS.png" />
           </p>
@@ -424,7 +420,7 @@ export function Sinnet() {
               </iframe>
             </div>
           </div>
-        </div>
+        </Section>
       </div>
 
       <div
@@ -433,57 +429,55 @@ export function Sinnet() {
         data-slide="5"
         data-stellar-background-ratio="0.2"
       >
-        <div className="content">
-          <div className="video">
-            <h2 className="category_header">
-              <img src="./logo/VIDEO.png" alt="video section logo" />
-            </h2>
-            <div className="video-container">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/IGlwLD3vpSg"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="video-container">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/jeRQnKV2DMg"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="video-container">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/qHfXUSNbE6g"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="video-container">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/ah_qG8_QvK4"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+        <Section name="video-section" className="content">
+          <h2 className="category_header">
+            <img src="./logo/VIDEO.png" alt="video section logo" />
+          </h2>
+          <div className="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/IGlwLD3vpSg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
-        </div>
+          <div className="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/jeRQnKV2DMg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/qHfXUSNbE6g"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ah_qG8_QvK4"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </Section>
       </div>
 
       <div
@@ -492,24 +486,22 @@ export function Sinnet() {
         data-slide="6"
         data-stellar-background-ratio="0.2"
       >
-        <div className="content">
-          <div className="photo" id="photo">
-            <p className="category_header">
-              <img src="./logo/PHOTOS.png" />
-            </p>
+        <Section name="photo-section" className="content">
+          <p className="category_header">
+            <img src="./logo/PHOTOS.png" />
+          </p>
 
-            <div className="news_block_clear">
-              <script src="http://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-              <iframe
-                src="http://lightwidget.com/widgets/a4d9f487201e559eac794fec7699196a.html"
-                scrolling="no"
-                allowtransparency="true"
-                className="lightwidget-widget"
-                style={{ width: "100%", border: 0, overflow: "hidden" }}
-              ></iframe>
-            </div>
+          <div className="news_block_clear">
+            <script src="http://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <iframe
+              src="http://lightwidget.com/widgets/a4d9f487201e559eac794fec7699196a.html"
+              scrolling="no"
+              allowtransparency="true"
+              className="lightwidget-widget"
+              style={{ width: "100%", border: 0, overflow: "hidden" }}
+            ></iframe>
           </div>
-        </div>
+        </Section>
         <div className="photo_full_width">
           <img src="./photo/Studio_crop.jpg" />
         </div>
@@ -524,7 +516,7 @@ export function Sinnet() {
         data-slide="7"
         data-stellar-background-ratio="0.2"
       >
-        <div className="content" id="info">
+        <Section name="info-section" className="content">
           <p className="category_header">
             <img src="./logo/INFO.png" />
           </p>
@@ -684,7 +676,7 @@ export function Sinnet() {
               <img src="./logo/CC.png" alt="CC" width="70" height="" />
             </div>
           </div>
-        </div>
+        </Section>
         <div className="end-logo">
           <img
             src="./logo/Sinnet-Island-Town-logo.png"
