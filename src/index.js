@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./css/index.css";
 import reportWebVitals from "./reportWebVitals";
-import { Sinnet } from "./components/Sinnet";
+import { Sinnet } from "./Sinnet";
 
 ReactDOM.render(
   <React.StrictMode>

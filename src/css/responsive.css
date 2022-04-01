@@ -85,12 +85,12 @@
     height: 1400px;
   }
 
-  #slide4 .box {
+  .jams-section .box {
     margin: 0px 0px 8px 0px;
     width: 90%;
   }
 
-  #slide4 iframe {
+  .jams-section iframe {
     width: 40%;
     height: 141px;
     padding: 6px;
@@ -144,7 +144,7 @@
     line-height: 24px;
   }
 
-  #slide1 img {
+  .top-section img {
     max-width: 900px;
     max-height: 900px;
     width: 90%;

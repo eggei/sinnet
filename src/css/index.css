@@ -79,13 +79,13 @@ a:hover {
 /******************************
  SLIDE 1 
 *******************************/
-#slide1 {
+.top-section {
   background-color: #87c876;
   background-repeat: repeat;
   box-shadow: none;
 }
 
-#slide1 img {
+.top-section img {
   max-width: 700px;
   max-height: 700px;
   margin: 0 auto;
@@ -98,12 +98,8 @@ a:hover {
 /******************************
  SLIDE 2 NEWS
 *******************************/
-#slide2 {
+.news-section {
   background-color: #aad6f3;
-}
-
-[name="news-section"] {
-  margin-left: 58px;
 }
 
 H3 {
@@ -123,17 +119,13 @@ H3 {
 
 .photo_full_width,
 .photo_full_width_mobile {
-  margin-bottom: -4px;
+  margin-bottom: -8px;
+  width: 100%;
+  height: inherit;
 }
 
 .photo_full_width_mobile {
   display: none;
-}
-
-.photo_full_width img,
-.photo_full_width_mobile img {
-  width: 100%;
-  height: inherit;
 }
 
 /******************************
@@ -157,31 +149,31 @@ bit-widget-container,
   margin-left: 58px;
 }
 
-#slide3 {
+.shows-section {
   background-color: #f38bb3;
 }
 
-#slide3 img:nth-child(2) {
+.shows-section img:nth-child(2) {
   position: absolute;
   top: 100px;
   left: 100px;
 }
-#slide3 img:nth-child(3) {
+.shows-section img:nth-child(3) {
   position: absolute;
   top: 150px;
   left: 300px;
 }
-#slide3 img:nth-child(4) {
+.shows-section img:nth-child(4) {
   position: absolute;
   top: 450px;
   left: 300px;
 }
-#slide3 img:nth-child(5) {
+.shows-section img:nth-child(5) {
   position: absolute;
   top: 200px;
   right: 300px;
 }
-#slide3 img:nth-child(6) {
+.shows-section img:nth-child(6) {
   position: absolute;
   top: 100px;
   right: 300px;
@@ -195,19 +187,19 @@ bit-widget-container,
  SLIDE 4 JAMS
 *******************************/
 
-#slide4 {
+.jams-section {
   background-color: #fff26e;
 }
 
-#slide4 iframe,
-#slide4 .box {
+.jams-section iframe,
+.jams-section .box {
   padding: 14px;
   background-color: white;
   border-radius: 6px;
   line-height: 22px;
 }
 
-#slide4 .parallaxbg {
+.jams-section .parallaxbg {
   position: absolute;
   right: 40px;
   top: 40px;
@@ -236,7 +228,7 @@ bit-widget-container,
  SLIDE 5 VIDEO
 *******************************/
 
-#slide5 {
+.video-section {
   background-color: #85c775;
   box-shadow: none;
 }
@@ -274,18 +266,15 @@ bit-widget-container,
  SLIDE 6 PHOTOS
 *******************************/
 
-#slide6 {
+.photo-section {
   background-color: #aad6f3;
-}
-
-#slide6 .category_header {
 }
 
 /******************************
  SLIDE 7
 *******************************/
 
-#slide7 {
+.info-section {
   background-color: #dcdbdb;
 }
 
@@ -396,9 +385,10 @@ CONTAINERS
 }
 
 .content {
-  padding: 5%;
-  margin: 0 auto;
-  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .news_block {
