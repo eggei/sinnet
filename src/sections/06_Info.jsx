@@ -6,63 +6,61 @@ export const InfoSection = () => {
       <p className="category_header">
         <img src="./logo/INFO.png" alt="info section logo" />
       </p>
-      <div className="news_block_clear">
-        <div className="info_box_text">
-          <h2 className="info_links">ON THE INTERNETS</h2>
-          <p className="sinnet_links">
-            <a
-              href="https://sinnet.bandcamp.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-bandcamp"></i>
-            </a>
-            <a
-              href="http://www.facebook.com/sinnetsongs"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-            <a
-              href="http://www.twitter.com/sinnetsongs"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-            <a
-              href="https://open.spotify.com/artist/60asQRqbLP70R24t4Cgnly?si=4CZYkZQuT7OFTeEyarUqUQ"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-spotify"></i>
-            </a>
-            <a
-              href="https://music.apple.com/us/artist/sinnet/508253412"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-apple"></i>
-            </a>
-            <a
-              href="http://www.instagram.com/sinnetsongs"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-          </p>
-          <h2 className="info_links">BOOKING</h2>
-          <p>
-            <a href="mailto:sinnetsongs@gmail.com">sinnetsongs(AT)gmail.com</a>
-          </p>
+      <div className="info_box_text">
+        <h2 className="info_links">ON THE INTERNETS</h2>
+        <p className="sinnet_links">
+          <a
+            href="https://sinnet.bandcamp.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-bandcamp"></i>
+          </a>
+          <a
+            href="http://www.facebook.com/sinnetsongs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="http://www.twitter.com/sinnetsongs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://open.spotify.com/artist/60asQRqbLP70R24t4Cgnly?si=4CZYkZQuT7OFTeEyarUqUQ"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-spotify"></i>
+          </a>
+          <a
+            href="https://music.apple.com/us/artist/sinnet/508253412"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-apple"></i>
+          </a>
+          <a
+            href="http://www.instagram.com/sinnetsongs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+        </p>
+        <h2 className="info_links">BOOKING</h2>
+        <p>
+          <a href="mailto:sinnetsongs@gmail.com">sinnetsongs(AT)gmail.com</a>
+        </p>
 
-          <h2 className="info_links">PRESSKIT</h2>
-          <p>
-            <a href="press.html">HERE</a>
-          </p>
-        </div>
+        <h2 className="info_links">PRESSKIT</h2>
+        <p>
+          <a href="press.html">HERE</a>
+        </p>
       </div>
 
       <div className="info_box_text">
@@ -159,6 +157,14 @@ export const InfoSection = () => {
         <div>
           <img src="./logo/CC.png" alt="CC" width="70" height="" />
         </div>
+      </div>
+      <div className="end-logo">
+        <img
+          src="./logo/Sinnet-Island-Town-logo.png"
+          alt="Stones_Logo"
+          height="100px"
+        />
+        <p>THANK YOU FOR VISITING OUR WEBSITE!</p>
       </div>
     </Section>
   );

@@ -7,16 +7,14 @@ export const PhotoSection = () => {
         <img src="./logo/PHOTOS.png" alt="photos section logo" />
       </p>
 
-      <div className="news_block_clear">
-        <iframe
-          title="instagram"
-          src="//lightwidget.com/widgets/a4d9f487201e559eac794fec7699196a.html"
-          scrolling="no"
-          allowtransparency="true"
-          className="lightwidget-widget"
-          style={{ width: "100%", border: 0, overflow: "hidden" }}
-        ></iframe>
-      </div>
+      <iframe
+        title="instagram"
+        src="//lightwidget.com/widgets/a4d9f487201e559eac794fec7699196a.html"
+        scrolling="no"
+        allowtransparency="true"
+        className="lightwidget-widget"
+        style={{ width: "100%", border: 0, overflow: "hidden" }}
+      ></iframe>
     </Section>
   );
 };
