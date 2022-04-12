@@ -1,0 +1,48 @@
+.info-section {
+  background-color: #dcdbdb;
+}
+
+.info-section main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 248px;
+}
+
+.info_box_text {
+  width: 22%;
+  padding: 10px 22px 10px 0px;
+  float: left;
+}
+
+.info_box_text img {
+  padding-top: 10px;
+}
+
+.info_box_text p {
+  margin-bottom: 14px;
+  line-height: 28px;
+}
+
+.info-bit {
+  margin: 8px;
+}
+
+.bio {
+  max-width: 900px;
+  margin-bottom: 60px;
+}
+
+.bio p {
+  margin-bottom: 20px;
+}
+
+.end-logo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}

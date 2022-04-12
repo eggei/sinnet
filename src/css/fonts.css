@@ -1,0 +1,83 @@
+/*FONTS*/
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("../fonts/proximanova-reg-webfont.eot");
+  src: url("../fonts/proximanova-reg-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/proximanova-reg-webfont.woff") format("woff"),
+    url("../fonts/proximanova-reg-webfont.ttf") format("truetype"),
+    url("../fonts/proximanova-reg-webfont.svg#ProximaNovaRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/proximanova-bold-webfont.eot");
+  src: url("../fonts/proximanova-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/proximanova-bold-webfont.woff") format("woff"),
+    url("../fonts/proximanova-bold-webfont.ttf") format("truetype"),
+    url("../fonts/proximanova-bold-webfont.svg#ProximaNovaBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNovaExtrabold";
+  src: url("../fonts/proximanova-xbold-webfont.eot");
+  src: url("../fonts/proximanova-xbold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/proximanova-xbold-webfont.woff") format("woff"),
+    url("../fonts/proximanova-xbold-webfont.ttf") format("truetype"),
+    url("../fonts/proximanova-xbold-webfont.svg#ProximaNovaExtrabold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BodoniXTRegular";
+  src: url("../fonts/BodoniXT-webfont.eot");
+  src: url("../fonts/BodoniXT-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BodoniXT-webfont.woff") format("woff"),
+    url("../fonts/BodoniXT-webfont.ttf") format("truetype"),
+    url("../fonts/BodoniXT-webfont.svg#BodoniXTRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TrocchiRegular";
+  src: url("../fonts/Trocchi-webfont.eot");
+  src: url("../fonts/Trocchi-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Trocchi-webfont.woff") format("woff"),
+    url("../fonts/Trocchi-webfont.ttf") format("truetype"),
+    url("../fonts/Trocchi-webfont.svg#TrocchiRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TrocchiBold";
+  src: url("../fonts/Trocchi-Bold-webfont.eot");
+  src: url("../fonts/Trocchi-Bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Trocchi-Bold-webfont.woff") format("woff"),
+    url("../fonts/Trocchi-Bold-webfont.ttf") format("truetype"),
+    url("../fonts/Trocchi-Bold-webfont.svg#TrocchiBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Buttermilk";
+  src: url("../fonts/buttermilk.otf");
+  src: url("../fonts/buttermilk.otf") format("embedded-opentype"),
+    url("/wp-content/themes/trendland2012/fonts/tlfult-light.woff")
+      format("woff"),
+    url("/wp-content/themes/trendland2012/fonts/tlfult-light.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

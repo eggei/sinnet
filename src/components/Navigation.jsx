@@ -29,9 +29,9 @@ const navigation = [
   { id: "info" },
 ];
 
-export const Navigation = ({ sections }) => {
+export const Navigation = ({ className }) => {
   return (
-    <ul className="navigation">
+    <ul className={className || "navigation"}>
       {navigation.map(({ id, content, url }, index) => (
         <li key={id + "-" + index}>
           {url ? (
@@ -39,7 +39,11 @@ export const Navigation = ({ sections }) => {
               STORE
             </a>
           ) : (
-            <LinkToSection to={`${id}-section`} {...commonProps}>
+            <LinkToSection
+              to={`${id}-section`}
+              onSetActive={() => console.log("TO")}
+              {...commonProps}
+            >
               {content || id.toUpperCase()}
             </LinkToSection>
           )}

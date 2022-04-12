@@ -9,7 +9,7 @@
   display: none;
 }
 
-#hamMenuToggle {
+.hamMenuToggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,7 @@
   user-select: none;
 }
 
-#hamMenuToggle a {
+.hamMenuToggle a {
   text-decoration: none;
   color: #232323;
   -webkit-transition: color 0.3s ease;
@@ -42,11 +42,11 @@
   transition: color 0.3s ease;
 }
 
-#hamMenuToggle a:hover {
+.hamMenuToggle a:hover {
   color: tomato;
 }
 
-#hamMenuToggle input {
+.hamMenuToggle input {
   display: block;
   position: absolute;
   width: 100%;
@@ -56,7 +56,7 @@
   z-index: 999; /* and place it over the hamburger */
 }
 
-#hamMenuToggle span {
+.hamMenuToggle span {
   display: block;
   width: 33px;
   height: 4px;
@@ -81,19 +81,19 @@
     -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#hamMenuToggle span:first-child {
+.hamMenuToggle span:first-child {
   -webkit-transform-origin: 0% 0%;
   -ms-transform-origin: 0% 0%;
   transform-origin: 0% 0%;
 }
 
-#hamMenuToggle span:nth-last-child(2) {
+.hamMenuToggle span:nth-last-child(2) {
   -webkit-transform-origin: 0% 100%;
   -ms-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
 }
 
-#hamMenuToggle input:checked ~ span {
+.hamMenuToggle input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(-2px, -1px);
   -ms-transform: rotate(45deg) translate(-2px, -1px);
@@ -101,20 +101,20 @@
   background: #232323;
 }
 
-#hamMenuToggle input:checked ~ span:nth-last-child(3) {
+.hamMenuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
   -ms-transform: rotate(0deg) scale(0.2, 0.2);
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#hamMenuToggle input:checked ~ span:nth-last-child(2) {
+.hamMenuToggle input:checked ~ span:nth-last-child(2) {
   -webkit-transform: rotate(-45deg) translate(0, -1px);
   -ms-transform: rotate(-45deg) translate(0, -1px);
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#hamMenu {
+.hamMenu {
   position: fixed;
   width: 100%;
   border-radius: 0 0 8px 0;
@@ -146,19 +146,19 @@
     -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#hamMenu li {
+.hamMenu li {
   padding: 10px 0;
   font-size: 22px;
   text-align: center;
 }
 
-#hamMenuToggle input:checked ~ ul {
+.hamMenuToggle input:checked ~ ul {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
 }
 
-#hamMenu li {
+.hamMenu li {
   display: block;
   padding: 0 10px;
   line-height: 30px;
@@ -168,7 +168,7 @@
   text-align: center;
 }
 
-#hamMenu li:hover,
+.hamMenu li:hover,
 .active {
   font-size: 26px;
   cursor: pointer;

@@ -148,4 +148,9 @@
     font-size: 26px;
     color: #f38bb3;
   }
+
+  .info-section main {
+    flex-wrap: nowrap;
+    height: auto;
+  }
 }

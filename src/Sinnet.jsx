@@ -41,7 +41,7 @@ export function Sinnet() {
 
       <InfoSection />
 
-      <footer>&copy; SINNET 2022</footer>
+      <footer>&copy; SINNET {new Date().getFullYear()}</footer>
     </>
   );
 }

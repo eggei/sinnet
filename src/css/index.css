@@ -8,6 +8,7 @@
 /* Sections */
 @import "./sections/video-section.css";
 @import "./sections/jams-section.css";
+@import "./sections/info-section.css";
 
 /* Responsiveness - must come after everything else */
-@import "./responsive-800.css";
+@import "./responsive-maxw-800.css";

@@ -177,42 +177,6 @@ bit-widget-container,
 }
 
 /******************************
- SLIDE 7
-*******************************/
-
-.info-section {
-  background-color: #dcdbdb;
-}
-
-.info_box_text {
-  width: 22%;
-  padding: 10px 22px 10px 0px;
-  float: left;
-}
-
-.info_box_text img {
-  padding-top: 10px;
-}
-
-.info_box_text p {
-  margin-bottom: 14px;
-  line-height: 28px;
-}
-
-.info_links {
-  padding-bottom: 8px;
-}
-
-.bio {
-  max-width: 900px;
-  margin-bottom: 60px;
-}
-
-.bio p {
-  margin-bottom: 20px;
-}
-
-/******************************
  SLIDE Tennis CLub
 *******************************/
 
@@ -475,15 +439,6 @@ PRESS
 
 .category_header img {
   height: 52px;
-}
-
-.end-logo {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  height: 400px;
-  justify-content: center;
-  align-items: center;
 }
 
 .active-section-link {
