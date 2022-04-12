@@ -168,78 +168,6 @@ bit-widget-container,
 }
 
 /******************************
- SLIDE 4 JAMS
-*******************************/
-
-.jams-section {
-  background-color: #fff26e;
-}
-
-.jams-section iframe,
-.jams-section .box {
-  padding: 14px;
-  background-color: white;
-  border-radius: 6px;
-  line-height: 22px;
-}
-
-.jams-section .parallaxbg {
-  position: absolute;
-  right: 40px;
-  top: 40px;
-  font-size: 28px;
-  color: rgba(51, 51, 51, 0.3);
-}
-
-.jams {
-  margin: 0 auto;
-}
-
-.box {
-  width: 80%;
-  max-width: 400px;
-}
-
-.sinnet_music iframe,
-.sinnet_music p {
-  margin: 8px;
-}
-
-/******************************
- SLIDE 5 VIDEO
-*******************************/
-
-.video-section {
-  background-color: #85c775;
-  box-shadow: none;
-}
-
-.video-container {
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.video p {
-  background: rgba(255, 246, 231, 0.95);
-  padding: 7px 10px;
-  width: 100%;
-}
-
-/******************************
  SLIDE 6 PHOTOS
 *******************************/
 
@@ -363,7 +291,7 @@ CONTAINERS
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 130px;
+  padding: 0 176px;
 }
 
 .news_block {

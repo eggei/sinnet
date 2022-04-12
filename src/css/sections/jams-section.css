@@ -1,0 +1,57 @@
+.jams-section {
+  background-color: #fff26e;
+  padding-bottom: 30px !important;
+}
+
+.jams-section .box {
+  padding: 24px;
+  background-color: white;
+  border-radius: 6px;
+  line-height: 22px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.jams-section main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.jams-section .parallaxbg {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-size: 28px;
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.jams {
+  margin: 0 auto;
+}
+
+.sinnet_music iframe,
+.sinnet_music p {
+  margin: 8px;
+}
+
+.media {
+  background: #fff8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.media.singles {
+  flex-direction: column;
+  align-items: center;
+}
+
+.media.singles iframe {
+  width: 100% !important;
+  max-width: 685px !important;
+}

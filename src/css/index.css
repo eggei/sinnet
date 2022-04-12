@@ -1,7 +1,13 @@
 @charset "utf-8";
 @import "./reset.css";
 /* Everything we write should be after reset */
-@import "./main.css";
+@import "./global.css";
 @import "./hamburger-menu.css";
-@import "./responsive-800.css";
 @import "./navigation.css";
+
+/* Sections */
+@import "./sections/video-section.css";
+@import "./sections/jams-section.css";
+
+/* Responsiveness - must come after everything else */
+@import "./responsive-800.css";
