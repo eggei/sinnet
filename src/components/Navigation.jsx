@@ -29,19 +29,19 @@ const navigation = [
   { id: "info" },
 ];
 
-export const Navigation = ({ className }) => {
+export const Navigation = ({ className, closeMenu = () => null }) => {
   return (
     <ul className={className || "navigation"}>
       {navigation.map(({ id, content, url }, index) => (
         <li key={id + "-" + index}>
           {url ? (
-            <a href={url} target="_blank" rel="noreferrer">
+            <a href={url} target="_blank" rel="noreferrer" onClick={closeMenu}>
               STORE
             </a>
           ) : (
             <LinkToSection
               to={`${id}-section`}
-              onSetActive={() => console.log("TO")}
+              onClick={closeMenu}
               {...commonProps}
             >
               {content || id.toUpperCase()}
