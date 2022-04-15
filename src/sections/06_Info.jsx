@@ -1,4 +1,5 @@
 import { Element as Section } from "react-scroll";
+import { Link } from "react-router-dom";
 
 export const InfoSection = () => {
   return (
@@ -64,7 +65,7 @@ export const InfoSection = () => {
         <div className="info-bit">
           <h2>PRESSKIT</h2>
           <p>
-            <a href="press.html">HERE</a>
+            <Link to="/press">HERE</Link>
           </p>
         </div>
 

@@ -3,10 +3,17 @@ import ReactDOM from "react-dom";
 import "./css/index.css";
 import reportWebVitals from "./reportWebVitals";
 import { Sinnet } from "./Sinnet";
+import { Press } from "./Press";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Sinnet />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Sinnet />} />
+        <Route path="press" element={<Press />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
