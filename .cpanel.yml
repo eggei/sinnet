@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/gjnooa1ktav0/repositories/sinnet
+    - /bin/cp -R build $DEPLOYPATH
