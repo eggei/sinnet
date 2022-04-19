@@ -21,6 +21,7 @@ npm install
 
 - Press `CMD + J` in VS Code
 - In the terminal, type `npm start` and press `Enter` to start development server
+- Wait for server to come up. It will open the browser and show the website automagically
 - To stop the server press `control + c` while in terminal
 
 ### Deploying this website
