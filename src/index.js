@@ -6,6 +6,8 @@ import { Sinnet } from "./Sinnet";
 import { Press } from "./Press";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+console.log("Hello from the main file");
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
