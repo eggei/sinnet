@@ -6,6 +6,44 @@ export const NewsSection = () => {
       <p className="category_header">
         <img src="./logo/NEWS.png" alt="news section logo" />
       </p>
+      <div class="news_block">
+        <h1>The Hinterlands Ball, Y'all!</h1>
+        <div class="poster-container">
+          <img
+            class="poster"
+            src="http://www.sinnetsongs.com/img_new/flyers/HINTERLANDS-BALL-INSTA.jpg"
+            alt="The Hinterlands Ball"
+          />
+        </div>
+        <p>
+          Sinnet and ONCE are teaming up for The Hinterlands Ball, a wintery
+          evening of excellent indie rock, featuring{" "}
+          <a href="https://colleengreen.bandcamp.com/">Colleen Green</a>,{" "}
+          <a href="https://meincapris.bandcamp.com/">Me in Capris</a> plus tasty
+          drinks and more.
+        </p>
+        <p>
+          What is one to do with these strange days between Thanksgiving and
+          Christmas? It’s not quite fall and still not winter. Seems like an
+          ideal time have a ball and get a little weird, right? Feel free to
+          dress for the occasion in whatever formal wear you like after all, it
+          is a ball. Or don’t if that’s not your thing, that’s cool too.
+        </p>
+        <p>
+          <a href="https://www.lightofdayrecords.com/">Light of Day Records</a>{" "}
+          will be on hand selling vinyl records at a special one night only
+          pop-up.
+        </p>
+        <p>
+          <a href="https://dice.fm/event/9g6ao-the-hinterlands-ball-10th-dec-the-center-for-arts-at-the-armory-performance-hall-somerville-tickets?pid=b819d5b4&_branch_match_id=339069011694772318&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q8zMjU1MTQxNjAzN7UvyEyxTbIwtEwxTTIBAD7xFwEuAAAA">
+            Tickets on Sale Now!
+          </a>
+        </p>
+        <p>
+          Hugs n' Kittens
+          <br />- AJS
+        </p>
+      </div>
       <div className="news_block">
         <h1>NEW SINNET ALBUM 'ISLAND TOWN'</h1>
         <div className="poster-container">
@@ -53,7 +91,9 @@ export const NewsSection = () => {
         </p>
       </div>
 
-      <div className="news_block">
+      {/* PAST NEWS */}
+
+      {/* <div className="news_block">
         <h1>IRON WOOOOO-MAAAN!</h1>
         <div className="poster-container">
           <img
@@ -105,7 +145,7 @@ export const NewsSection = () => {
           Hugs n' Kittens
           <br />- AJS
         </p>
-      </div>
+      </div> */}
     </Section>
   );
 };
