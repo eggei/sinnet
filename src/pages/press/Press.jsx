@@ -485,7 +485,7 @@ export const Press = () => {
             <div className="img-container">
               <img
                 alt="Sinnet studio"
-                src="http://www.sinnetsongs.com/photos/KEN/Sinnet_Studio_color_1.jpg"
+                src="./photo/Sinnet_Studio_1.jpg"
                 width="500px"
                 align="left"
               />
@@ -493,7 +493,7 @@ export const Press = () => {
             <div className="img-container">
               <img
                 alt="Sinnet backyard"
-                src="http://www.sinnetsongs.com/photos/KEN/Sinnet_Backyard_color_2.jpg"
+                src="./photo/Sinnet-yard-color-2.jpg"
                 width="300px"
                 align="right"
               />
