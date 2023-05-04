@@ -58,7 +58,7 @@ export const InfoSection = () => {
         <div className="info-bit">
           <h2>BOOKING</h2>
           <p>
-            <a href="mailto:sinnetsongs@gmail.com">sinnetsongs(AT)gmail.com</a>
+            <a href="mailto:sinnetsongs@gmail.com">sinnetsongs@gmail.com</a>
           </p>
         </div>
 

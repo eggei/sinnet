@@ -258,7 +258,8 @@ CONTAINERS
   padding: 0 176px;
 }
 
-.news_block {
+.news_block,
+.paper {
   width: 80%;
   max-width: 1000px;
   background-color: white;
@@ -314,7 +315,8 @@ CONTAINERS
   float: left;
 }
 
-.news_block h1 {
+.news_block h1,
+.paper h1 {
   font-size: 22pt;
   padding-bottom: 27px;
   margin-bottom: 10px;
@@ -369,6 +371,17 @@ footer {
   z-index: 2;
 }
 
+.category_header.no-stick {
+  position: static;
+}
+
+.category_header.press {
+  position: static;
+  margin: 40px 0;
+  justify-content: start;
+  margin-left: 48px;
+}
+
 .category_header img {
   height: 55px;
 }
@@ -376,6 +389,10 @@ footer {
 /******************************
 PRESS
 *******************************/
+
+.press-section {
+  background-color: #aad6f3;
+}
 
 .quote {
   font-size: 1.4em;
