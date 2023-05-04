@@ -4,16 +4,16 @@ import "./css/index.css";
 import reportWebVitals from "./reportWebVitals";
 import { Home } from "./pages/home/00_index";
 import { Press } from "./pages/press/Press";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="press" element={<Press />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
