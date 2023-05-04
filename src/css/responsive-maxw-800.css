@@ -23,18 +23,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 0;
-    margin: 12px 0;
-    top: 10px;
+    margin: 12px 0 24px 0;
   }
 
-  .news_block {
+  .news_block,
+  .paper {
     padding: 30px;
     width: initial;
     margin-bottom: 30px;
   }
 
-  .news_block h1 {
+  .news_block h1,
+  .paper h1 {
     margin: 10px 0px 0px 0px;
     font-size: 24px;
   }
@@ -119,7 +119,7 @@
   }
 
   .content {
-    padding: 0 30px;
+    padding: 40px 30px;
     float: none;
   }
 
@@ -152,5 +152,18 @@
   .info-section main {
     flex-wrap: nowrap;
     height: auto;
+  }
+
+  .category_header.press {
+    margin: 40px 0;
+  }
+
+  .quote {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .quote_margin {
+    margin-right: 0px;
   }
 }

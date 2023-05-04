@@ -1,14 +1,14 @@
-import { Navigation } from "./components/Navigation";
-import { HamburgerNavigation } from "./components/HamburgerNavigation";
-import { TopSection } from "./sections/00_Top";
-import { NewsSection } from "./sections/01_News";
-import { ShowsSection } from "./sections/02_Shows";
-import { JamsSection } from "./sections/03_Jams";
-import { VideoSection } from "./sections/04_Video";
-import { PhotoSection } from "./sections/05_Photo";
-import { InfoSection } from "./sections/06_Info";
+import { Navigation } from "../../components/Navigation";
+import { HamburgerNavigation } from "../../components/HamburgerNavigation";
+import { TopSection } from "./01_Top";
+import { NewsSection } from "./02_News";
+import { ShowsSection } from "./03_Shows";
+import { JamsSection } from "./04_Jams";
+import { VideoSection } from "./05_Video";
+import { PhotoSection } from "./06_Photo";
+import { InfoSection } from "./07_Info";
 
-export function Sinnet() {
+export function Home() {
   return (
     <>
       <Navigation />

@@ -2,15 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./css/index.css";
 import reportWebVitals from "./reportWebVitals";
-import { Sinnet } from "./Sinnet";
-import { Press } from "./Press";
+import { Home } from "./pages/home/00_index";
+import { Press } from "./pages/press/Press";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Sinnet />} />
+        <Route path="/" element={<Home />} />
         <Route path="press" element={<Press />} />
       </Routes>
     </BrowserRouter>

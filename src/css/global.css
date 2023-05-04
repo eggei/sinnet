@@ -71,13 +71,14 @@ a:hover {
   background-color: #87c876;
   background-repeat: repeat;
   box-shadow: none;
+  padding-top: 0 !important;
 }
 
 .top-section-image {
-  max-width: 700px;
+  max-width: 1100px;
   max-height: 700px;
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   height: 70%;
   display: block;
 }
@@ -168,15 +169,6 @@ bit-widget-container,
 }
 
 /******************************
- SLIDE 6 PHOTOS
-*******************************/
-
-.photo-section {
-  background-color: #aad6f3;
-  padding-bottom: 40px !important;
-}
-
-/******************************
  SLIDE Tennis CLub
 *******************************/
 
@@ -232,12 +224,6 @@ bit-widget-container,
   margin: auto;
 }
 
-.top-section-image {
-  max-width: 1100px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 /******************************
 CONTAINERS
 *******************************/
@@ -255,7 +241,7 @@ CONTAINERS
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 176px;
+  padding: 80px 176px;
 }
 
 .news_block,
@@ -277,7 +263,8 @@ CONTAINERS
   margin: 0 auto;
 }
 
-.news_block p {
+.news_block p,
+.paper p {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.5;
@@ -377,9 +364,9 @@ footer {
 
 .category_header.press {
   position: static;
-  margin: 40px 0;
+  margin: 60px 0;
   justify-content: start;
-  margin-left: 48px;
+  width: 80%;
 }
 
 .category_header img {

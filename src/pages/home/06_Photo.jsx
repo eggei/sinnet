@@ -2,7 +2,7 @@ import { Element as Section } from "react-scroll";
 
 export const PhotoSection = () => {
   return (
-    <Section name="photo-section" className="content photo-section">
+    <Section name="photo-section" className="content insta-section">
       <p className="category_header">
         <img src="./logo/PHOTOS.png" alt="photos section logo" />
       </p>
